@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GATHER — Discover, Register & Connect at community events near you." />
+  <title>GATHER — Community Event Portal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="80">
+  <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid px-4 px-lg-5">
+      <a class="navbar-brand" href="#home">
+        <span class="brand-dot"></span>
+        <span class="brand-text">GATHER</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav mx-auto gap-lg-2">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <form class="search-form d-flex align-items-center gap-2" role="search" onsubmit="return false;">
+          <input class="search-input" type="search" placeholder="Search events…" aria-label="Search" />
+          <button class="search-btn" type="submit"><i class="bi bi-search"></i></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <section id="home" class="hero-section">
+    <div class="hero-bg-text" aria-hidden="true">2025</div>
+    <div class="container-fluid px-4 px-lg-5 h-100 d-flex align-items-center">
+      <div class="row w-100 align-items-center">
+        <div class="col-lg-7">
+          <div class="hero-eyebrow">
+            <span class="eyebrow-line"></span>
+            <span class="eyebrow-text">Featured Events 2025</span>
+          </div>
+          <h1 class="hero-title">
+            <span class="hero-line" data-delay="0">Connect.</span>
+            <span class="hero-line italic" data-delay="1">Experience.</span>
+            <span class="hero-line hero-accent" data-delay="2">Celebrate.</span>
+          </h1>
+          <p class="hero-body" data-delay="3">
+            Discover hundreds of community events — workshops, concerts, food festivals, tech talks, and more. Join thousands of locals building stronger communities together.
+          </p>
+          <div class="hero-cta" data-delay="4">
+            <a href="#events" class="btn-primary-custom">
+              <span>Browse Events</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+            <a href="#register" class="btn-ghost-custom">Register Now</a>
+          </div>
+        </div>
+        <div class="col-lg-5 d-none d-lg-flex justify-content-end">
+          <div class="hero-stats-block">
+            <div class="stat-item">
+              <div class="stat-num">250+</div>
+              <div class="stat-label">Events Hosted</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <div class="stat-num">12K+</div>
+              <div class="stat-label">Members</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <div class="stat-num">48</div>
+              <div class="stat-label">Cities</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <div class="stat-num">98%</div>
+              <div class="stat-label">Satisfaction</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+  <section id="events" class="events-section">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="section-header">
+        <div class="section-meta">
+          <span class="mono-tag">01 /</span>
+          <span class="section-subtitle">Upcoming</span>
+        </div>
+        <h2 class="section-title">Featured <em>Events</em></h2>
+      </div>
+      <div class="row g-4 g-lg-5">
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="event-card" data-category="music">
+            <div class="card-visual music-bg">
+              <i class="bi bi-music-note-beamed card-icon"></i>
+              <div class="card-badge music-badge">Music</div>
+              <div class="card-notif">12</div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Summer Beats Music Festival</h3>
+              <p class="card-desc">Three days of live performances from 40+ artists across 5 stages. Food trucks, art installations, and a dedicated kids' zone.</p>
+              <ul class="card-meta-list">
+                <li><i class="bi bi-calendar3"></i>July 18–20, 2025</li>
+                <li><i class="bi bi-geo-alt"></i>Riverside Amphitheater, Austin TX</li>
+                <li><i class="bi bi-people"></i>5,000 Attendees Expected</li>
+              </ul>
+            </div>
+            <div class="card-footer-custom">
+              <span class="card-price">$12 – $50</span>
+              <button class="card-cta" data-bs-toggle="modal" data-bs-target="#successModal">
+                Register <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="event-card" data-category="tech">
+            <div class="card-visual tech-bg">
+              <i class="bi bi-cpu card-icon"></i>
+              <div class="card-badge tech-badge">Tech</div>
+              <div class="card-notif">5</div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">DevSummit 2025 — AI & Beyond</h3>
+              <p class="card-desc">Keynotes, workshops, and networking sessions with industry leaders. Explore AI, Web3, cloud architecture and open-source tooling.</p>
+              <ul class="card-meta-list">
+                <li><i class="bi bi-calendar3"></i>August 5–6, 2025</li>
+                <li><i class="bi bi-geo-alt"></i>Tech Hub Convention Center, SF</li>
+                <li><i class="bi bi-people"></i>2,500 Attendees Expected</li>
+              </ul>
+            </div>
+            <div class="card-footer-custom">
+              <span class="card-price">$5 – $25</span>
+              <button class="card-cta" data-bs-toggle="modal" data-bs-target="#successModal">
+                Register <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="event-card" data-category="food">
+            <div class="card-visual food-bg">
+              <i class="bi bi-egg-fried card-icon"></i>
+              <div class="card-badge food-badge">Food</div>
+              <div class="card-notif">8</div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">International Food & Culture Fest</h3>
+              <p class="card-desc">Sample cuisines from 30+ countries, watch live cooking demos, enjoy cultural performances, and meet local artisan vendors.</p>
+              <ul class="card-meta-list">
+                <li><i class="bi bi-calendar3"></i>September 12–14, 2025</li>
+                <li><i class="bi bi-geo-alt"></i>Millennium Park, Chicago IL</li>
+                <li><i class="bi bi-people"></i>8,000 Attendees Expected</li>
+              </ul>
+            </div>
+            <div class="card-footer-custom">
+              <span class="card-price">Free </span>
+              <button class="card-cta" data-bs-toggle="modal" data-bs-target="#successModal">
+                Register <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="event-card" data-category="arts">
+            <div class="card-visual arts-bg">
+              <i class="bi bi-palette card-icon"></i>
+              <div class="card-badge arts-badge">Arts</div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Urban Art & Design Expo</h3>
+              <p class="card-desc">A curated showcase of emerging and established visual artists, interactive murals, live spray-painting, and digital art installations.</p>
+              <ul class="card-meta-list">
+                <li><i class="bi bi-calendar3"></i>October 3–5, 2025</li>
+                <li><i class="bi bi-geo-alt"></i>Brooklyn Art Warehouse, NY</li>
+                <li><i class="bi bi-people"></i>3,000 Attendees Expected</li>
+              </ul>
+            </div>
+            <div class="card-footer-custom">
+              <span class="card-price">$5 – $10</span>
+              <button class="card-cta" data-bs-toggle="modal" data-bs-target="#successModal">
+                Register <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="event-card" data-category="wellness">
+            <div class="card-visual wellness-bg">
+              <i class="bi bi-heart-pulse card-icon"></i>
+              <div class="card-badge wellness-badge">Wellness</div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Mindful Living Wellness Retreat</h3>
+              <p class="card-desc">Yoga sessions, meditation workshops, nutrition talks, and holistic therapy demos. Recharge your mind and body for the season ahead.</p>
+              <ul class="card-meta-list">
+                <li><i class="bi bi-calendar3"></i>November 1–2, 2025</li>
+                <li><i class="bi bi-geo-alt"></i>Serenity Grounds, Portland OR</li>
+                <li><i class="bi bi-people"></i>600 Attendees Expected</li>
+              </ul>
+            </div>
+            <div class="card-footer-custom">
+              <span class="card-price">$95 – $180</span>
+              <button class="card-cta" data-bs-toggle="modal" data-bs-target="#successModal">
+                Register <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="event-card" data-category="lit">
+            <div class="card-visual lit-bg">
+              <i class="bi bi-book card-icon"></i>
+              <div class="card-badge lit-badge">Lit</div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">The Writers' Circle Book Festival</h3>
+              <p class="card-desc">Author readings, panel discussions, creative writing workshops, and a book market featuring 100+ independent publishers.</p>
+              <ul class="card-meta-list">
+                <li><i class="bi bi-calendar3"></i>December 6–7, 2025</li>
+                <li><i class="bi bi-geo-alt"></i>Grand Library Hall, Boston MA</li>
+                <li><i class="bi bi-people"></i>1,800 Attendees Expected</li>
+              </ul>
+            </div>
+            <div class="card-footer-custom">
+              <span class="card-price">Free – $20</span>
+              <button class="card-cta" data-bs-toggle="modal" data-bs-target="#successModal">
+                Register <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section id="sidebar-section" class="sidebar-section">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="row g-5">
+        <aside class="col-md-3 order-md-1">
+          <div class="filter-widget reveal">
+            <div class="widget-heading">
+              <i class="bi bi-sliders"></i>
+              <span>Filter Events</span>
+            </div>
+            <div class="filter-group">
+              <label>Category</label>
+              <select class="filter-select">
+                <option>All Categories</option>
+                <option>Music</option>
+                <option>Technology</option>
+                <option>Food & Culture</option>
+                <option>Arts</option>
+                <option>Wellness</option>
+                <option>Literature</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label>Date</label>
+              <input type="date" class="filter-input" />
+            </div>
+            <div class="filter-group">
+              <label>Price Range</label>
+              <input type="range" class="filter-range" min="0" max="200" />
+              <div class="range-labels"><span>Free</span><span>$200</span></div>
+            </div>
+            <button class="filter-btn">Apply Filters</button>
+          </div>
+          <div class="tags-widget reveal">
+            <div class="widget-heading">
+              <i class="bi bi-hash"></i>
+              <span>Popular Tags</span>
+            </div>
+            <div class="tags-cloud">
+              <span class="tag">#Music</span>
+              <span class="tag">#Tech</span>
+              <span class="tag">#Food</span>
+              <span class="tag">#Art</span>
+              <span class="tag">#Wellness</span>
+              <span class="tag">#Books</span>
+              <span class="tag">#Community</span>
+              <span class="tag">#Outdoor</span>
+            </div>
+          </div>
+          <div class="profile-widget reveal">
+            <img src="https://ui-avatars.com/api/?name=R+E&background=c9a84c&color=0a0a0a&size=80&rounded=true&bold=true" alt="Jordan Lee" class="profile-avatar" />
+            <div class="profile-name">Rooban </div>
+            <div class="profile-role">Student</div>
+            <p class="profile-bio">Passionate about building local communities through meaningful events.</p>
+            <div class="profile-socials">
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </aside>
+        <main class="col-md-9 order-md-2">
+          <ul class="nav-tabs-custom" id="contentTabs" role="tablist">
+            <li><button class="tab-btn active" data-bs-toggle="tab" data-bs-target="#upcoming" type="button"><i class="bi bi-calendar-check"></i> Upcoming</button></li>
+            <li><button class="tab-btn" data-bs-toggle="tab" data-bs-target="#featured" type="button"><i class="bi bi-star"></i> Featured</button></li>
+            <li><button class="tab-btn" data-bs-toggle="tab" data-bs-target="#past" type="button"><i class="bi bi-clock-history"></i> Past Events</button></li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="upcoming">
+              <div class="event-list">
+                <div class="event-list-item">
+                  <div class="list-item-header">
+                    <div class="list-item-left">
+                      <span class="list-badge music-badge">Music</span>
+                      <strong>Summer Beats Music Festival</strong>
+                    </div>
+                    <button class="expand-btn" data-bs-toggle="collapse" data-bs-target="#detail1">
+                      Details <i class="bi bi-chevron-down"></i>
+                    </button>
+                  </div>
+                  <div class="collapse" id="detail1">
+                    <div class="detail-panel">
+                      <p><i class="bi bi-clock"></i> Gates open 2 PM daily. All-ages welcome.</p>
+                      <p><i class="bi bi-map"></i> Parking available on-site. Public transit encouraged.</p>
+                      <p><i class="bi bi-info-circle"></i> No outside food/beverages. ADA accessible.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="event-list-item">
+                  <div class="list-item-header">
+                    <div class="list-item-left">
+                      <span class="list-badge tech-badge">Tech</span>
+                      <strong>DevSummit 2025 — AI & Beyond</strong>
+                    </div>
+                    <button class="expand-btn" data-bs-toggle="collapse" data-bs-target="#detail2">
+                      Details <i class="bi bi-chevron-down"></i>
+                    </button>
+                  </div>
+                  <div class="collapse" id="detail2">
+                    <div class="detail-panel">
+                      <p><i class="bi bi-clock"></i> Registration starts 8 AM. Keynote at 9 AM sharp.</p>
+                      <p><i class="bi bi-wifi"></i> High-speed WiFi and power stations throughout venue.</p>
+                      <p><i class="bi bi-cup-hot"></i> Meals and refreshments included in ticket price.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="event-list-item">
+                  <div class="list-item-header">
+                    <div class="list-item-left">
+                      <span class="list-badge food-badge">Food</span>
+                      <strong>International Food & Culture Fest</strong>
+                    </div>
+                    <button class="expand-btn" data-bs-toggle="collapse" data-bs-target="#detail3">
+                      Details <i class="bi bi-chevron-down"></i>
+                    </button>
+                  </div>
+                  <div class="collapse" id="detail3">
+                    <div class="detail-panel">
+                      <p><i class="bi bi-clock"></i> Open 11 AM – 9 PM all three days.</p>
+                      <p><i class="bi bi-people"></i> Family-friendly with dedicated children's activity zone.</p>
+                      <p><i class="bi bi-cash-coin"></i> Free entry. Food tokens available at booths.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="featured">
+              <div class="featured-alert">
+                <i class="bi bi-star-fill"></i>
+                <div><strong>Editor's Pick:</strong> DevSummit 2025 is this season's most anticipated tech gathering. Secure your spot before early-bird pricing ends!</div>
+              </div>
+              <ul class="nav-pills-custom" id="pills-tab" role="tablist">
+                <li><button class="pill-btn active" data-bs-toggle="pill" data-bs-target="#pills-all">All</button></li>
+                <li><button class="pill-btn" data-bs-toggle="pill" data-bs-target="#pills-free">Free</button></li>
+                <li><button class="pill-btn" data-bs-toggle="pill" data-bs-target="#pills-paid">Paid</button></li>
+              </ul>
+              <div class="tab-content mt-4">
+                <div class="tab-pane fade show active" id="pills-all"><p class="text-secondary">Showing all featured events for the season. Use filters to narrow down your selection.</p></div>
+                <div class="tab-pane fade" id="pills-free"><p class="text-secondary">Free events include the International Food & Culture Fest and The Writers' Circle Book Festival (basic entry).</p></div>
+                <div class="tab-pane fade" id="pills-paid"><p class="text-secondary">Premium ticketed events with exclusive access, VIP lounges, and priority seating available for purchase.</p></div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="past">
+              <p class="text-secondary mb-4">Browse our archive of 250+ successfully hosted events.</p>
+              <div class="past-tags">
+                <span class="past-tag">Spring Jazz Fest 2024</span>
+                <span class="past-tag">WebDev Conf 2024</span>
+                <span class="past-tag">Harvest Food Fair 2024</span>
+                <span class="past-tag">Mural Arts Weekend 2024</span>
+                <span class="past-tag">Yoga in the Park 2024</span>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </section>
+  <section class="features-section">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="section-header light">
+        <div class="section-meta">
+          <span class="mono-tag">02 /</span>
+          <span class="section-subtitle">Why Choose Us</span>
+        </div>
+        <h2 class="section-title">What We <em>Offer</em></h2>
+      </div>
+      <div class="d-flex flex-column flex-md-row gap-4 align-items-stretch">
+        <div class="feature-box reveal">
+          <div class="feature-num">01</div>
+          <i class="bi bi-shield-check feature-icon"></i>
+          <h4>Verified Organizers</h4>
+          <p>Every event host is background-checked and community-vetted for your peace of mind.</p>
+        </div>
+        <div class="feature-box reveal">
+          <div class="feature-num">02</div>
+          <i class="bi bi-ticket-perforated feature-icon"></i>
+          <h4>Instant E-Tickets</h4>
+          <p>Secure digital tickets delivered to your inbox within seconds of registration.</p>
+        </div>
+        <div class="feature-box featured-box reveal">
+          <div class="feature-num">03</div>
+          <i class="bi bi-people feature-icon"></i>
+          <h4>Community First</h4>
+          <p>Built by locals for locals — 100% of proceeds support community programmes.</p>
+        </div>
+        <div class="feature-box reveal">
+          <div class="feature-num">04</div>
+          <i class="bi bi-headset feature-icon"></i>
+          <h4>24/7 Support</h4>
+          <p>Live chat, email, and phone support available before, during, and after every event.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="typo-section">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <div class="section-meta mb-3">
+            <span class="mono-tag">03 /</span>
+            <span class="section-subtitle">Typography</span>
+          </div>
+          <h2 class="typo-headline">Bold.<br/><em>Clear.</em><br/><span class="typo-accent">Impactful.</span></h2>
+          <p class="typo-body mt-4">Great events deserve great communication. Our platform uses modern typographic principles to ensure information is always legible, beautiful, and action-inspiring.</p>
+          <div class="typo-demo mt-5">
+            <div class="typo-sample">
+              <span class="sample-label">Display — Cormorant Garamond 700</span>
+              <div class="sample-display">Headline Text</div>
+            </div>
+            <div class="typo-sample">
+              <span class="sample-label">Body — Outfit 400</span>
+              <div class="sample-body">The quick brown fox jumps over the lazy dog.</div>
+            </div>
+            <div class="typo-sample">
+              <span class="sample-label">Mono — Space Mono</span>
+              <div class="sample-mono">01 / SECTION_LABEL</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="color-grid">
+            <div class="color-chip amber-chip"><span>Amber</span></div>
+            <div class="color-chip onyx-chip"><span>Onyx</span></div>
+            <div class="color-chip slate-chip"><span>Slate</span></div>
+            <div class="color-chip ivory-chip"><span>Ivory</span></div>
+            <div class="color-chip smoke-chip"><span>Smoke</span></div>
+            <div class="color-chip ash-chip"><span>Ash</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="gallery" class="gallery-section">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="section-header">
+        <div class="section-meta">
+          <span class="mono-tag">04 /</span>
+          <span class="section-subtitle">Memories</span>
+        </div>
+        <h2 class="section-title">Event <em>Gallery</em></h2>
+      </div>
+      <div id="galleryCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-slide music-slide">
+              <div class="slide-content">
+                <span class="slide-tag">Music</span>
+                <h3>Summer Beats 2024</h3>
+                <p>Main Stage Night — 15,000 in attendance</p>
+              </div>
+              <i class="bi bi-music-note-beamed slide-bg-icon"></i>
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Summer Beats Music Festival</h5>
+              <p>Three unforgettable nights of music under the stars.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-slide tech-slide">
+              <div class="slide-content">
+                <span class="slide-tag">Technology</span>
+                <h3>DevSummit 2024</h3>
+                <p>AI Workshop — Sold Out in 48 Hours</p>
+              </div>
+              <i class="bi bi-cpu slide-bg-icon"></i>
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>DevSummit 2024</h5>
+              <p>Packed keynote hall with 2,400 tech enthusiasts.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-slide food-slide">
+              <div class="slide-content">
+                <span class="slide-tag">Food & Culture</span>
+                <h3>Food & Culture Fest 2024</h3>
+                <p>32 Countries · 120 Vendors · 1 Weekend</p>
+              </div>
+              <i class="bi bi-egg-fried slide-bg-icon"></i>
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>International Food Fest 2024</h5>
+              <p>Flavours from 32 nations in one magnificent park.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-slide arts-slide">
+              <div class="slide-content">
+                <span class="slide-tag">Arts</span>
+                <h3>Urban Art Expo 2024</h3>
+                <p>90 Artists · 40 Live Murals · 3 Days</p>
+              </div>
+              <i class="bi bi-palette slide-bg-icon"></i>
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Urban Art & Design Expo 2024</h5>
+              <p>Where creativity meets concrete and canvas.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+          <i class="bi bi-chevron-left carousel-arrow"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+          <i class="bi bi-chevron-right carousel-arrow"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="buttons-section">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="section-header">
+        <div class="section-meta">
+          <span class="mono-tag">05 /</span>
+          <span class="section-subtitle">UI Components</span>
+        </div>
+        <h2 class="section-title">Button <em>Showcase</em></h2>
+      </div>
+      <div class="btn-showcase">
+        <div class="btn-group-label">Solid Buttons</div>
+        <div class="d-flex flex-wrap gap-3 mb-5">
+          <button class="showcase-btn solid amber"><i class="bi bi-check2-circle"></i> Primary</button>
+          <button class="showcase-btn solid slate">Secondary</button>
+          <button class="showcase-btn solid green"><i class="bi bi-check-circle"></i> Success</button>
+          <button class="showcase-btn solid red"><i class="bi bi-x-circle"></i> Danger</button>
+          <button class="showcase-btn solid warm"><i class="bi bi-exclamation-circle"></i> Warning</button>
+          <button class="showcase-btn solid sky"><i class="bi bi-info-circle"></i> Info</button>
+          <button class="showcase-btn solid night"><i class="bi bi-moon-fill"></i> Dark</button>
+          <button class="showcase-btn solid light-btn">Light</button>
+        </div>
+        <div class="btn-group-label">Outline Buttons</div>
+        <div class="d-flex flex-wrap gap-3 mb-5">
+          <button class="showcase-btn outline amber">Outline Primary</button>
+          <button class="showcase-btn outline slate">Outline Secondary</button>
+          <button class="showcase-btn outline green">Outline Success</button>
+          <button class="showcase-btn outline red">Outline Danger</button>
+          <button class="showcase-btn outline warm">Outline Warning</button>
+          <button class="showcase-btn outline sky">Outline Info</button>
+          <button class="showcase-btn outline night">Outline Dark</button>
+        </div>
+        <div class="btn-group-label">Button Groups</div>
+        <div class="d-flex flex-wrap gap-4 mb-5">
+          <div class="btn-group-custom" role="group" aria-label="Day group">
+            <button class="group-btn active">Mon</button>
+            <button class="group-btn">Tue</button>
+            <button class="group-btn">Wed</button>
+            <button class="group-btn">Thu</button>
+            <button class="group-btn">Fri</button>
+          </div>
+          <div class="btn-group-custom" role="group" aria-label="Size group">
+            <button class="group-btn dark-group">Small</button>
+            <button class="group-btn dark-group active">Medium</button>
+            <button class="group-btn dark-group">Large</button>
+          </div>
+        </div>
+        <div class="btn-group-label">Borders · Shadows · Rounded</div>
+        <div class="d-flex flex-wrap gap-4 align-items-center">
+          <div class="border-demo border-amber">border-amber border-3</div>
+          <div class="border-demo rounded-pill-demo shadow">rounded-pill + shadow</div>
+          <div class="circle-demo shadow"><i class="bi bi-star-fill"></i></div>
+          <div class="shadow-demo">shadow-lg + rounded</div>
+          <div class="visibility-demo d-none d-md-block">d-none d-md-block</div>
+          <div class="flex-demo d-lg-flex align-items-center gap-2"><i class="bi bi-eye"></i> d-lg-flex</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="alignment-section">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="section-header">
+        <div class="section-meta">
+          <span class="mono-tag">06 /</span>
+          <span class="section-subtitle">Layout</span>
+        </div>
+        <h2 class="section-title">Alignment <em>& Order</em></h2>
+      </div>
+      <div class="row justify-content-center align-items-center g-4 mb-5">
+        <div class="col-md-4">
+          <div class="align-card reveal">
+            <i class="bi bi-arrow-left-right align-icon"></i>
+            <h5>justify-content-center</h5>
+            <p>Horizontally centres flex children within the row.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="align-card featured-align reveal">
+            <i class="bi bi-align-center align-icon"></i>
+            <h5>align-items-center</h5>
+            <p>Vertically centres flex children within the row.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 order-md-2">
+          <div class="order-box order-amber reveal">
+            <span class="order-tag">order-md-2 (visual first on desktop)</span>
+            <h5>This block is order-md-2</h5>
+            <p>In HTML source it comes second, but on md+ screens it renders first thanks to Bootstrap order utilities.</p>
+          </div>
+        </div>
+        <div class="col-md-6 order-md-1">
+          <div class="order-box order-dark reveal">
+            <span class="order-tag">order-md-1 (visual second on desktop)</span>
+            <h5>This block is order-md-1</h5>
+            <p>In HTML it is first, but on md+ screens it renders second. Swap layout without touching markup.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="register" class="register-section">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-meta mb-3 text-center justify-content-center">
+            <span class="mono-tag">07 /</span>
+            <span class="section-subtitle">Join Us</span>
+          </div>
+          <h2 class="section-title text-center mb-5">Event <em>Registration</em></h2>
+          <div class="register-card">
+            <form id="registrationForm" novalidate>
+              <div class="row g-4 mb-4">
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="text" class="form-control custom-input" id="fullName" required minlength="3" />
+                    <label for="fullName"><i class="bi bi-person me-1"></i>Full Name</label>
+                    <div class="invalid-feedback">Please enter your full name (min. 3 characters).</div>
+                    <div class="valid-feedback">Looks good!</div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="email" class="form-control custom-input" id="emailAddress" required />
+                    <label for="emailAddress"><i class="bi bi-envelope me-1"></i>Email Address</label>
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                    <div class="valid-feedback">Looks good!</div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-4">
+                <div class="input-group custom-input-group has-validation">
+                  <span class="input-group-text custom-addon"><i class="bi bi-telephone-fill"></i></span>
+                  <input type="tel" class="form-control custom-input" id="phoneNumber" placeholder="Phone Number (e.g. +1 555 000 0000)" required pattern="[\+]?[0-9\s\-]{7,15}" />
+                  <div class="invalid-feedback">Please enter a valid phone number.</div>
+                </div>
+              </div>
+              <div class="form-floating mb-4">
+                <select class="form-select custom-input" id="eventCategory" required>
+                  <option value="" selected disabled>Choose a category</option>
+                  <option value="music">🎵 Music & Concerts</option>
+                  <option value="tech">💻 Technology & Innovation</option>
+                  <option value="food">🍜 Food & Culture</option>
+                  <option value="art">🎨 Arts & Design</option>
+                  <option value="wellness">🧘 Health & Wellness</option>
+                  <option value="literature">📚 Literature & Writing</option>
+                  <option value="sports">⚽ Sports & Recreation</option>
+                </select>
+                <label for="eventCategory"><i class="bi bi-grid me-1"></i>Event Category</label>
+                <div class="invalid-feedback">Please select an event category.</div>
+              </div>
+              <div class="form-floating mb-4">
+                <textarea class="form-control custom-input" id="messageText" style="height:120px;"></textarea>
+                <label for="messageText"><i class="bi bi-chat-text me-1"></i>Message (Optional)</label>
+              </div>
+              <div class="mb-5">
+                <div class="custom-check mb-3">
+                  <input class="form-check-input" type="checkbox" id="emailUpdates" />
+                  <label for="emailUpdates">Send me event updates and newsletters</label>
+                </div>
+                <div class="custom-check mb-3">
+                  <input class="form-check-input" type="checkbox" id="smsAlerts" />
+                  <label for="smsAlerts">Send SMS reminders for registered events</label>
+                </div>
+                <div class="custom-check">
+                  <input class="form-check-input" type="checkbox" id="agreeTerms" required />
+                  <label for="agreeTerms">I agree to the <a href="#" class="terms-link">Terms of Service</a> and <a href="#" class="terms-link">Privacy Policy</a></label>
+                  <div class="invalid-feedback">You must agree before registering.</div>
+                </div>
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="submit-btn" id="submitBtn">
+                  <i class="bi bi-send-fill"></i>
+                  <span>Complete Registration</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="faq-section">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-meta mb-3 justify-content-center">
+            <span class="mono-tag">08 /</span>
+            <span class="section-subtitle">Support</span>
+          </div>
+          <h2 class="section-title text-center mb-5">Frequently Asked <em>Questions</em></h2>
+          <div class="accordion custom-accordion" id="faqAccordion">
+            <div class="accordion-item custom-accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button custom-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true">
+                  <span class="faq-num">01</span> How do I register for an event?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                <div class="accordion-body custom-accordion-body">
+                  Simply find an event you're interested in, click the "Register" button on its card, fill in the registration form with your details, and complete the payment if applicable. You'll receive a confirmation email with your digital ticket instantly.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item custom-accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false">
+                  <span class="faq-num">02</span> Can I get a refund if I can't attend?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body custom-accordion-body">
+                  Refund policies vary by event organiser. Most events offer full refunds up to 7 days before the event date, and partial refunds up to 48 hours before. Check the specific event's policy on its detail page.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item custom-accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false">
+                  <span class="faq-num">03</span> Are events family-friendly?
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body custom-accordion-body">
+                  Many of our events are designed for all ages and include dedicated family zones, children's activities, and accessible facilities. Each event listing clearly indicates age recommendations and family-friendly features.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item custom-accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false">
+                  <span class="faq-num">04</span> How do I become an event organiser?
+                </button>
+              </h2>
+              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body custom-accordion-body">
+                  Anyone can apply to host events on our platform. Submit your organiser application through the "Host an Event" page, complete the verification process, and you'll be able to list events within 5 business days.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item custom-accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false">
+                  <span class="faq-num">05</span> Is there a mobile app available?
+                </button>
+              </h2>
+              <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body custom-accordion-body">
+                  Our mobile-optimised website works seamlessly on all devices. A dedicated iOS and Android app is currently in beta and will be publicly available in Q3 2025.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="contact-section">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="section-meta mb-3 justify-content-center">
+        <span class="mono-tag light-mono">09 /</span>
+        <span class="section-subtitle light-sub">Get In Touch</span>
+      </div>
+      <h2 class="section-title light-title text-center mb-5">Contact <em>Us</em></h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="contact-card reveal">
+            <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <h6>Our Office</h6>
+            <p>123 Community Ave, Suite 400<br/>India, delhi 78701 </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="contact-card reveal">
+            <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
+            <h6>Call Us</h6>
+            <p>+91 8767845321 <br/>Mon – Fri, 9 AM – 6 PM CST</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="contact-card reveal">
+            <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+            <h6>Email Us</h6>
+            <p>roobane12gmail.com<br/>support@gather.io</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="newsletter-section">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="row align-items-center g-4">
+        <div class="col-md-6">
+          <h3 class="newsletter-title">Stay in the <em>Loop</em></h3>
+          <p class="newsletter-body">Get event alerts, early-bird deals and community news — right to your inbox.</p>
+        </div>
+        <div class="col-md-5 ms-md-auto">
+          <div class="newsletter-input-group">
+            <input type="email" placeholder="Enter your email address" />
+            <button><i class="bi bi-bell-fill"></i> Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content custom-modal">
+        <div class="modal-header custom-modal-header">
+          <h5 class="modal-title" id="successModalLabel">
+            <i class="bi bi-check-circle-fill me-2"></i>Registration Confirmed!
+          </h5>
+          <button type="button" class="modal-close-btn" data-bs-dismiss="modal" aria-label="Close">
+            <i class="bi bi-x"></i>
+          </button>
+        </div>
+        <div class="modal-body custom-modal-body text-center p-5">
+          <div class="modal-icon-wrap">
+            <i class="bi bi-calendar-check-fill modal-icon"></i>
+          </div>
+          <h4>You're all set!</h4>
+          <p>Your spot has been reserved. A confirmation email with your digital ticket has been sent to your registered address.</p>
+          <div class="d-flex gap-3 justify-content-center mt-4">
+            <a href="#events" class="modal-primary-btn" data-bs-dismiss="modal">Browse More Events</a>
+            <button class="modal-secondary-btn" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+        <div class="modal-footer custom-modal-footer">
+          <span>Share:</span>
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="site-footer">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="row g-5">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand">
+            <span class="brand-dot"></span>
+            <span class="brand-text">GATHER</span>
+          </div>
+          <p class="footer-bio">Connecting communities through meaningful events since 2018. Discover, experience, and celebrate together.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" aria-label="Twitter X"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h6 class="footer-heading">Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#register">Register</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h6 class="footer-heading">Categories</h6>
+          <ul class="footer-links">
+            <li><a href="#"><i class="bi bi-music-note me-1"></i>Music & Concerts</a></li>
+            <li><a href="#"><i class="bi bi-cpu me-1"></i>Technology</a></li>
+            <li><a href="#"><i class="bi bi-egg-fried me-1"></i>Food & Culture</a></li>
+            <li><a href="#"><i class="bi bi-palette me-1"></i>Arts & Design</a></li>
+            <li><a href="#"><i class="bi bi-heart-pulse me-1"></i>Wellness</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h6 class="footer-heading">Newsletter</h6>
+          <p class="footer-bio mb-3">Get the latest events straight to your inbox. No spam, ever.</p>
+          <div class="footer-newsletter">
+            <input type="email" placeholder="your@email.com" />
+            <button><i class="bi bi-send-fill"></i></button>
+          </div>
+          <p class="footer-privacy d-none d-md-block">
+            <i class="bi bi-shield-check me-1"></i>We respect your privacy. Unsubscribe anytime.
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 GATHER Community Portal. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <button id="backToTop" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmr1JSwBF+rQOF6EVX1JBQakC7B" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
